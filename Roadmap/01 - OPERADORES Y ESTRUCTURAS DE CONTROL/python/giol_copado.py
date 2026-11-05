@@ -120,8 +120,8 @@ print(6 not in tupla) # devuelve True si el valor 6 no se encuentra en la tupla
 
 #operadores bit a bit Sirve para realizar operaciones a nivel de bits en números enteros. Los operadores bit a bit trabajan con la representación binaria de los números.
 
-a = 97 # 1010
-b = 'a' # 0011
+a = 10 # 1010
+b = 3 # 0011
 
 print(f"AND: 10 & 3 = {a & b}") # AND bit a bit, d   evuelve 2 (0010)
 print(f"OR: 10 | 3 = {a | b}") # OR bit a bit, devuelve 11 (1011)
