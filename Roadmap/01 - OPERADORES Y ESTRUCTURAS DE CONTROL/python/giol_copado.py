@@ -129,3 +129,50 @@ print(f"XOR: 10 ^ 3 = {a ^ b}") # XOR bit a bit, devuelve 9 (1001)
 print(f"NOT: ~10 = {~a}") # NOT bit a bit, devuelve -11 (inverso de 10 en binario)
 print(f"Left Shift: 10 << 1 = {a << 1}") # Desplazamiento a la izquierda, devuelve 20 (10100)
 print(f"Right Shift: 10 >> 1 = {a >> 1}") # Desplazamiento a la derecha, devuelve 5 (0101)
+
+'''
+Estrucutras de control
+'''
+
+
+#Condicionales
+
+mi_string = 'Gio'  
+
+if mi_string == 'Gio':
+    print('Hola Gio')
+elif mi_string == 'Juan':
+    print('Hola Juan')
+else:
+    print('quien eres?')
+
+# Iterativas
+
+for i in range(15):
+    print(i)
+
+
+numero = 0
+while numero < 10:
+    print(f'el valor {numero} es menor que 10')
+    numero += 1
+
+# Manejo de excepciones 
+
+try:
+    print(10 / 0)  # Esto generará una excepción de división por cero
+except:
+    print("Error: No se puede dividir por cero.")
+finally:
+    print("Este bloque se ejecuta siempre, haya o no una excepción.")
+
+
+'''DIFICULTAD EXTRA (opcional):
+ * Crea un programa que imprima por consola todos los números comprendidos
+ * entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.'''
+
+for i in range(10,56):
+    if i == 55:
+        print(i)
+    elif i % 2 == 0 and i != 16 and i % 3 != 0:
+        print(i)
